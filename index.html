@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="dist/semantic.css">
+	<link rel="stylesheet" type="text/css" href="dist/semantic.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  	<script src="dist/semantic.js"></script>
+  	<script src="Sortable.js"></script>
+  	<script src="js.js"></script>
+</head>
+<body>
+	
+
+<input type="button" id="setValues" value="Set Values" />
+<input type="button" id="clearValues" value="Clear Values" />
+
+<div class="ui fluid multiple search selection dropdown" id="sortable">
+  <input name="tags" type="hidden">
+  <i class="dropdown icon"></i>
+  <div class="default text">Skills</div>
+  <div class="menu">
+	<div class="item" data-value="angular">Angular	
+	<span>100 users</span>
+	</div>
+	<div class="item" data-value="css">CSS
+	<span>50 users</span>
+	</div>
+	<div class="item" data-value="design">Graphic Design
+	<span>20 users</span>
+	</div>
+	<div class="item" data-value="ember">Ember
+	<span>20 users</span>
+	</div>
+	<div class="item" data-value="html">HTML</div>
+	<div class="item" data-value="ia">Information Architecture</div>
+	<div class="item" data-value="javascript">Javascript</div>
+	<div class="item" data-value="mech">Mechanical Engineering</div>
+	<div class="item" data-value="meteor">Meteor</div>
+	<div class="item" data-value="node">NodeJS</div>
+	<div class="item" data-value="plumbing">Plumbing</div>
+	<div class="item" data-value="python">Python</div>
+	<div class="item" data-value="rails">Rails</div>
+	<div class="item" data-value="react">React</div>
+	<div class="item" data-value="repair">Kitchen Repair</div>
+	<div class="item" data-value="ruby">Ruby</div>
+	<div class="item" data-value="ui">UI Design</div>
+	<div class="item" data-value="ux">User Experience</div>
+  </div>
+</div>
+<br>
+<div class="ui fluid multiple search selection dropdown add" id="sortable">
+  <input name="tags" type="hidden">
+  <i class="dropdown icon"></i>
+  <div class="default text">Skills</div>
+  <div class="menu">
+	<div class="item" data-value="angular">Angular	
+	<span>100 users</span>
+	</div>
+	<div class="item" data-value="css">CSS
+	<span>50 users</span>
+	</div>
+	<div class="item" data-value="design">Graphic Design
+	<span>20 users</span>
+	</div>
+	<div class="item" data-value="ember">Ember
+	<span>20 users</span>
+	</div>
+	<div class="item" data-value="html">HTML</div>
+	<div class="item" data-value="ia">Information Architecture</div>
+	<div class="item" data-value="javascript">Javascript</div>
+	<div class="item" data-value="mech">Mechanical Engineering</div>
+	<div class="item" data-value="meteor">Meteor</div>
+	<div class="item" data-value="node">NodeJS</div>
+	<div class="item" data-value="plumbing">Plumbing</div>
+	<div class="item" data-value="python">Python</div>
+	<div class="item" data-value="rails">Rails</div>
+	<div class="item" data-value="react">React</div>
+	<div class="item" data-value="repair">Kitchen Repair</div>
+	<div class="item" data-value="ruby">Ruby</div>
+	<div class="item" data-value="ui">UI Design</div>
+	<div class="item" data-value="ux">User Experience</div>
+  </div>
+</div>
+
+
+<script>
+Sortable.create(sortable, { 
+	draggable: ".label",
+	animation: 150
+ });
+</script>
+
+</body>
+</html>
